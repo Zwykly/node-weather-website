@@ -18,7 +18,7 @@ weatherForm.addEventListener('submit', (event) => {
                 return loc.innerHTML = data.error;
             }
             loc.innerHTML = `<B>${data.placeName}</B>`;
-            temp.innerHTML = `The temperature is <B>${data.temperature}</B> degrees Celcius but feels like <B>${data.feelslike}</B>`;
+            temp.innerHTML = `It is currently <B>${data.description}</B> and the temperature is <B>${data.temperature}</B> degrees Celcius, but feels like <B>${data.feelslike}</B>. Humidity is at <B>${data.humidity}%</B>.`;
         });
     });
 })
